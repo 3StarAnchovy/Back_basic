@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,16 +11,15 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="http://localhost:8080/city_list/city">
+    	<input type = "hidden" name= "param" value="regist"/>
         <fieldset>
-            <label for="">ID</label>
-            <input type="text" name="" id=""><br>
             <label for="">Name</label>
-            <input type="text" name="" id=""><br>
+            <input type="text" name="name" id=""><br>
             <label for="">CountryCode</label>
-            <input type="text" name="" id=""><br>
+            <input type="text" name="countryCode" id=""><br>
             <label for="">Population</label>
-            <input type="text" name="" id=""><br>
+            <input type="text" name="population" id=""><br>
             <input type="submit" value="등록">
         </fieldset>
     </form>
