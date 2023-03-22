@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form action="<%= request.getContextPath() %>/city">
+    <form action="http://localhost:8080/city_list/city">
     	<input type = "hidden" name= "param" value="regist"/>
         <fieldset>
             <label for="">Name</label>
