@@ -65,7 +65,7 @@ public class UserController extends HttpServlet {
 		//인덱스로 페이지 이동
 		if(result == null) //실패할때 로그인페이지
 		{
-			response.sendRedirect(request.getContextPath() + "user/loginpage");
+			response.sendRedirect(request.getContextPath() + "user?param=loginpage");
 		}
 		else //성공하면 인덱스, 세션 생성 ㄱㄱ
 		{

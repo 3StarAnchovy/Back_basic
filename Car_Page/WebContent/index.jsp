@@ -29,15 +29,16 @@
 	%>
 	<a href="${pageContext.request.contextPath}/user?param=loginpage">로그인</a>
 	<br>
-	<a href="">자동차 목록 조회 화면</a>
+	<a href="${pageContext.request.contextPath}/car?param=list">자동차 목록 조회 화면</a>
 	<br>
 	<%
 		}else
 	%>
 	<% { %>
-	<a href="">자동차 등록</a>
+	<a href="${pageContext.request.contextPath}/car?param=regist">자동차 등록</a>
+	<a href="${pageContext.request.contextPath}/car?param=list">자동차 목록 조회 화면</a>
 	<br>
-	<a href = "${pageContext.request.contextPath}/user?param=logout"">로그아웃</a>
+	<a href = "${pageContext.request.contextPath}/user?param=logout">로그아웃</a>
 	<%} %>
 
 </body>
