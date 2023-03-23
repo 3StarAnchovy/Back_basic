@@ -12,6 +12,12 @@ public class User {
 		this.name = name;
 	}
 
+	public User(String id, String pwd) {
+		super();
+		this.id = id;
+		this.pwd = pwd;
+	}
+
 	public User() {
 		super();
 	}

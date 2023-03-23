@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <form action="">
+    <form action="${pageContext.request.contextPath}/user">
+    	<input type ="hidden" name = "param" value = "login">
         <fieldset>
             <label for="">ID</label>
-            <input type="text" name="" id=""><br>
+            <input type="text" name="id" id=""><br>
             <label for="">Password</label>
-            <input type="text" name="" id=""><br>
+            <input type="text" name="password" id=""><br>
             <label>제출</label>
             <input type = "submit" name="" id="">
         </fieldset>

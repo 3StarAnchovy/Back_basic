@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,8 +24,21 @@
  -->
 
 <body>
-	<a href ="${pageContext.request.contextPath}/user?param=loginpage">로그인</a><br>
-	<a href ="">자동차 목록 조회 화면</a><br>
-	<a href ="">자동차 등록</a><br>
+	<%
+		if (session.getAttribute("userInfo") == null) {
+	%>
+	<a href="${pageContext.request.contextPath}/user?param=loginpage">로그인</a>
+	<br>
+	<a href="">자동차 목록 조회 화면</a>
+	<br>
+	<%
+		}else
+	%>
+	<% { %>
+	<a href="">자동차 등록</a>
+	<br>
+	<a href = "${pageContext.request.contextPath}/user?param=logout"">로그아웃</a>
+	<%} %>
+
 </body>
 </html>
