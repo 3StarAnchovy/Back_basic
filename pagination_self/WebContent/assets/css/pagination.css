@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.pagination {
+	display : flex;
+	justify-content : center;
+	flex-wrap : wrap;
+	text-align : center;
+}
+
+/* 페이지 버튼 공통 설정  */
+.pagination > li > a{
+	display : inline-block;
+	width:100%;
+	border-top : 1px solid #4D4D4D;
+	border-left : 1px solid #4D4D4D;
+	border-bottom : 1px solid #4D4D4D;
+	width : 40px;
+	color : #146C94;
+	padding : 3px;
+}
+/* 버튼 border 겹치는 것 처리 */
+.pagination > li:last-child > a{
+	border-right : 1px solid #4D4D4D
+}
+
+/* 페이지 버튼에 마우스 올렸을 때 */
+.pagination > li > a:hover{
+	background-color : #AAAAAA;
+	color : white;
+}
+
+/* 이전 버튼 */
+.pagination > .prev > a {
+	border-radius : 10px 0px 0px 10px;
+}
+
+/* 다음 버튼 */
+.pagination > .next > a {
+	border-radius : 0px 10px 10px 0px;
+}
+
+/* 현재페이지 버튼 */
+.pagination > .active > a{
+	background-color : #19A7CE !important; 
+	color : white !important;
+	cursor : default;
+}
+
+/* 이전 or 다음 버튼을 사용할 수 없는 경우 */
+.pagination > .disabled > a{
+	background-color : white !important;
+	color : #4D4D4D !important;
+	cursor : default !important;
+}
